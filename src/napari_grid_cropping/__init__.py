@@ -2,16 +2,10 @@ try:
     from ._version import version as __version__
 except ImportError:
     __version__ = "unknown"
-from ._widget import (
-    ExampleQWidget,
-    ImageThreshold,
-    threshold_autogenerate_widget,
-    threshold_magic_widget,
-)
+from ._annotating import label_widget
+from ._cropping import grid_widget
 
 __all__ = (
-    "ExampleQWidget",
-    "ImageThreshold",
-    "threshold_autogenerate_widget",
-    "threshold_magic_widget",
+    "grid_widget",
+    "label_widget",
 )
